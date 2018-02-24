@@ -85,3 +85,32 @@ body {
 .products .img2 {
   min-width: 300px;
 }
+.localization {
+  margin-top: 2rem;
+}
+.localization .en {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem ;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline;
+  text-decoration: none;
+}
+.localization .en a {
+  color: black;
+}
+.localization .en a:hover {
+  text-decoration: none;
+}
+.localization .ru {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline;
+  text-decoration: none;
+}
+.localization .ru a {
+  color: black;
+}
+.localization .ru a:hover {
+  text-decoration: none;
+}
