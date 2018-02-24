@@ -1,0 +1,116 @@
+body {
+  color: #7D9DD4;
+}
+.products1 {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-bottom: 3rem;
+}
+.products1 h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7D9DD4;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.products1 p {
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 18px;
+  color: #7D9DD4;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.products .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.products .dropdown-content {
+  margin-left: -8rem;
+  margin-top: -20rem;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.products .dropdown:hover .dropdown-content {
+  display: block;
+}
+.products .desc {
+  padding: 15px;
+  text-align: center;
+}
+.products .button {
+  border: 1px solid gray;
+  background-color: darkorange;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  width: 13rem;
+  text-align: center;
+  display: inline-block;
+}
+.products h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+.products .price-block {
+  margin-bottom: 2rem;
+  padding: 3rem 3rem 4rem;
+  min-height: 15rem;
+  background: white;
+  text-align: center;
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+}
+.products p {
+  font-size: 2.5rem;
+}
+.products h4 {
+  margin: 3rem 0rem;
+  font-size: 1.8rem;
+}
+.products .img {
+  max-height: 30rem;
+  max-width: 15rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.products .img2 {
+  min-width: 300px;
+}
+.localization {
+  margin-top: 2rem;
+}
+.localization .en {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem ;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline;
+  text-decoration: none;
+}
+.localization .en a {
+  color: black;
+}
+.localization .en a:hover {
+  text-decoration: none;
+}
+.localization .ru {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline;
+  text-decoration: none;
+}
+.localization .ru a {
+  color: black;
+}
+.localization .ru a:hover {
+  text-decoration: none;
+}

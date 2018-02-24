@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>about</title>
+    <link rel="stylesheet" href="about/css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        var arrLang = {
+            'en' : {
+            	'about' : 'about us',
+            	'abouttext' : 'One Village One Product (OVOP) Association is an organization of local producers. It was established in 2011 in order to activate local communities in Issyk-Kul region. OVOP aims to promote economic activity in region by introducing OVOP Movement. The OVOP movement is a strategic movement designed specifically for regional development and it originates from Oita prefecture in Japan. It is an integrated community development approach with a vision to increase incomes and wealth for local people of Issyk-Kul region through new product development (value addition to local resources), quality control of products, marketing of high value added products and human resources development. Currently, there are more than 220 groups (around 2200 members) in the Association and its members specialize in different production spheres such as felt, handicraft, jam, beekeeping, and food processing. The OVOP movement contributes not only to increasing of income of the local producers, but also to promoting social status of women. Concept of product The products of the OVOP Association are all handmade, nicely decorated and made out of local natural resources. They are durable, attractive, unique, tasty and beautiful. Those OVOP products are liked by all and can be wonderful gift to people of all ages. OVOP products are promoted under the name of ‘’Issyk-Kul Brand”. This trade mark is authorized to use only for the products, which are selected by Issyk-Kul Brand Committee. Issyk-Kul Brand Committee is a regional voluntary group consisting of 20 members from academic, tourism, business, movement & other sectors. It was created for improving local products and to lean the importance of quality control. Thus, mission of the Committee is to ensure the quality of the OVOP products, by screening and evaluating according to the following criteria:Made from local resources,Natural,Eco-friendly,Hand-made,Unique design,High-quality.'
+            },
+            'ru' : {
+            	'about' : 'о нас',
+            	'abouttext' : 'Ассоциация Одно Село Один Продукт (ОСОП)- является объединением местных производителей Иссык-Кульской области. ОСОП основан в 2011 году и ставит своей целью продвижение метода ОСОП.Движение ОСОП представляет собой особый подход  к развитию регионов, который был разработан в 1979 году в префектуре Оита в Японии. Это интеграционный метод развития местных сообществ с видением на повышение доходов и благосостояния производителей Иссык-Кульской области путем придания ценности местным ресурсам, развития человеческого потенциала и маркетинга высококачественной продукции, которая получила бы мировое признание.Ассоциация состоит из более чем 220 групп (более 2200 членов), которые специализируются на производстве различной продукции, например: изделий из войлока, сувениров, меда, джемов (варенья) и соков из диких ягод.Концепция продуктаПродукты Ассоциации ОСОП выполнены вручную, красиво оформлены и изготовлены из местных природных ресурсов. Они прочные, привлекательные и уникальные, вкусные и красивые. Эти продукты нравятся всем и могут быть прекрасными подарками для людей всех возрастов.Продукция Ассоциации ОСОП, как войлочная, так и пищевая, продвигается под торговой маркой «Иссык-Куль Бренд»Эта торговая марка была присуждена  продукции ОСОП комитетом «Иссык-Куль Бренд» после тщательного отбора и оценки.Продукция « Иссык-Куль бренд» выбирается на основании следующих критериев: kachestvenna , изготовлена из местных натуральных ресурсов , экологична ,обладает уникальным дизайном'
+            }
+        };
+
+        $(function(){
+            $('.translate').click(function(){
+                var lang = $(this).attr('id');
+                console.log('success');
+                $('.lang').each(function(index,element){
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+	<div class="main">
+
+				<div class="col-lg-2 col-lg-offset-10 col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10">
+                    <div class="row localization">
+                        <div class="ru translate" id="ru"><a href="#">ru</a></div>
+                        <div class="en translate" id="en"><a href="#">eng</a></div>
+                    </div>
+					</div>
+		
+			<div class="header"><h1 class="lang" key="about">about us</h1></div>
+		<div class="container">
+			<p class="lang" key="abouttext">One Village One Product (OVOP) Association is an organization of local  producers. It was established in 2011 in order to activate local communities in Issyk-Kul region. OVOP aims to promote economic activity in region by introducing OVOP Movement.
+
+The OVOP movement is a strategic movement designed specifically for regional development and it originates from Oita prefecture in Japan. It is an integrated community development approach with a vision to increase incomes and wealth for local people of Issyk-Kul region through new product development (value addition to local resources), quality control of products, marketing of high value added products and human resources development.
+
+Currently, there are more than 220 groups (around 2200 members) in the Association and its members specialize in different production spheres such as felt, handicraft, jam, beekeeping, and food processing. The OVOP movement contributes not only to increasing of income of the local producers, but also to promoting social status of women.
+Concept of product
+The products of the OVOP Association are all handmade, nicely decorated and made out of local natural resources. They are durable, attractive, unique, tasty and beautiful. Those OVOP products are liked by all and can be wonderful gift to people of all ages.
+
+OVOP products are promoted under the name of ‘’Issyk-Kul Brand”.
+This trade mark is authorized to use only for the products, which are selected by Issyk-Kul Brand Committee.
+Issyk-Kul Brand Committee is a regional voluntary group consisting of 20 members from academic, tourism, business, movement & other sectors. It was created for improving local products and to lean the importance of quality control.
+Thus, mission of the Committee is to ensure the quality of the OVOP products, by screening and evaluating according to the following criteria:Made from local resources,Natural,Eco-friendly,Hand-made,Unique design,High-quality.
+</p>
+		</div>
+	</div>
+
+	
+</body>
+</html>

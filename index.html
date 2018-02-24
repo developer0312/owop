@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>owop</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        var arrLang = {
+            'en' : {
+                'h1' : 'natural products from kyrgyzstan',
+                'hsmall' : 'big production of different products in Kyrgyzstan',
+                'abouth2' : 'about us',
+                'aboutp' : 'One Village One Product (OVOP) Association is an organization of local  producers.It was established in 2011, in order to activate local communities in Issyk-Kul region,and aims to promote economic activities by introducing OVOP Movement.',
+                'aboutbtn' : 'more',
+                'productsh2' : 'Products',
+                'product1' : 'Felt production',
+                'product2' : 'Natural production',
+                'product3' : 'Cosmetic production',
+                'feath1' : 'Features',
+                'feat1' : 'Quality',
+                'feat2' : 'eco-friendly',
+                'feat3' : 'unique design',
+                'feat4' : 'made by local resources',
+                'feedh2' : 'feedback',
+                'howh1':'how to order',
+                'howbtn' :'more',
+                'conth1': 'contacts',
+                'cont1' : 'E-mail: ovop.kyrgyzstan@gmail.com',
+                'cont2': 'Phone: +996 3922 51601',
+                'cont3': 'You can buy our products in Kyrgyzstan:',
+                'cont4' : 'Bishkek, Chuy av. 114, shop “Issyk-Kul Brand”, phone: 661 131',
+                'cont5' : 'Bishkek, Toktogul st. 140, OVOP centre, phone: +996 504 503, +996 772 330 136',
+                'cont6' : 'Karakol, Toktogul st., “Issyk-Kul Brand”, phone: +996 3922 54357'
+
+
+
+            },
+            'ru' : {
+                'h1' : 'Натуральные продукты из Кыргызстана',
+                'hsmall' : 'большое производство разных продуктов в Кыргызстане',
+                'abouth2' : 'о нас',
+                'aboutp' : 'Ассоциация Одно Село Один Продукт (ОСОП)- является объединением местных производителей Иссык-Кульской области. ОСОП основан в 2011 году и ставит своей целью продвижение метода ОСОП.',
+                'aboutbtn' : 'подробнее',
+                'productsh2' : 'Продукты',
+                'product1' : 'Войлочная продукция',
+                'product2' : 'Натуральная продукция',
+                'product3' : 'Косметическая продукция',
+                'feath1' : 'преимущества',
+                'feat1' : 'качество',
+                'feat2' : 'экологически чистые',
+                'feat3' : 'уникальный дизайн',
+                'feat4' : 'сделано местными ресурсами',
+                'feedh2' : 'Отзывы',
+                'howh1':'как заказать',
+                'howbtn' :'подробнее',
+                'conth1': 'контакты',
+                'cont1' : 'E-mail: ovop.kyrgyzstan@gmail.com',
+                'cont2': 'тел: +996 3922 51601',
+                'cont3': 'Продукцию можно приобрести в городе Бишкеке: ',
+                'cont4' : 'в магазине “ИССЫК-КУЛЬ БРЕНД”, по адресу пр. Чуй, 114, тел: 661 131',
+                'cont5' : 'В ОСОП Центре, по адресу Токтогула 140, тел: +996 504 503, +996 772 330 136.',
+                'cont6' : 'в магазине “ИССЫК-КУЛЬ БРЕНД”, по адресу ул. Токтогула (рядом с магазином “Караван”, тел: +996 3922 54357 '
+            }
+        };
+
+        $(function(){
+            $('.translate').click(function(){
+                var lang = $(this).attr('id');
+                console.log('success');
+                $('.lang').each(function(index,element){
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+	<section id="main" class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2"><div class="logo">
+					<img src="img/Untitled-1.png" alt="">
+				</div></div>
+				<div class="col-lg-2 col-lg-offset-8 col-md-2 col-md-offset-8 col-sm-2 col-sm-offset-8">
+                    <div class="row localization">
+                        <div class="ru translate" id="ru"><a href="#">ru</a></div>
+                        <div class="en translate" id="en"><a href="#">eng</a></div>
+                    </div>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h1 class="lang" key="h1">natural products from kyrgyzstan</h1>
+					<p class="lang" key="hsmall">big production of different products in kyrgyzstan</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="featured" class="featured">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12"><h2 class="lang" key="abouth2">about us</h2>
+                    <div class="col-lg-6 col-lg-offset-3">
+                <p class="lang" key="aboutp">One Village One Product (OVOP) Association is an organization of local  producers.<br>It was established in 2011, in order to activate local communities in Issyk-Kul region,<br>and aims to promote economic activities by introducing OVOP Movement.</p></div>
+                <div class="col-lg-12">
+                <div class="main-button">
+                <a href="about.html" class="lang" key="aboutbtn">more</a></div></div></div>
+			</div>
+		</div>
+	</section>
+	<section id="products" class="products">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2 class="lang" key="productsh2">products</h2>
+				</div>
+		    </div>
+		    <div class="sections">
+		    	<div class="col-lg-4 col-md-4 col-sm-4">
+		    		<a href="products.html">
+		    		<h3 class="lang" key='product1'>felt production</h3>
+		    		<p><strong>_______________</strong></p></a>
+		    	</div>
+		    	<div class="col-lg-4 col-md-4 col-sm-4">
+		    		<a href="natural.html">
+		    		<h3 class="lang" key='product2'>natural production</h3>
+		    		<p><strong>________________</strong></p></a>
+		    	</div>
+		    	<div class="col-lg-4 col-md-4 col-sm-4">
+		    		<a href="cosmetics.html">
+		    		<h3 class="lang" key='product3'>cosmetics production</h3>
+		    		<p><strong>_______________</strong></p></a>
+		    	</div>
+		    </div>
+		</div>
+	</section>
+    <section class="features">
+         <div class="container">
+            <h2 class="section-header lang" key="feath1">features</h2>
+            <div class="featured-slider">
+            <div class="features-block">
+            <div class="features-img">
+            <picture><source srcset="img/featured/1.svg" type="image/"><img src="img/png/003-hands.png" alt=""></picture></div>
+            <h3 class="lang" key="feat1">quality</h3></div>
+            <div class="features-block">
+            <div class="features-img">
+            <picture>
+            <source srcset="img/featured/2.svg" type="image/">
+            <img src="img/png/001-nature.png" alt="">
+            </picture>
+            </div>
+            <h3  class="lang" key="feat2">eco-friendly</h3>
+            </div>
+            <div class="features-block">
+            <div class="features-img">
+            <picture>
+            <source srcset="img/featured/3.svg" type="image/">
+            <img src="img/png/002-favorite.png" alt="">
+            </picture>
+            </div>
+            <h3  class="lang" key="feat3">unique design</h3>
+            </div>
+            <div class="features-block">
+            <div class="features-img">
+            <picture>
+            <source srcset="img/featured/4.svg" type="image/">
+            <img src="img/png/004-placeholder.png" alt="">
+            </picture>
+            </div>
+            <h3  class="lang" key="feat4">made by local resources</h3>
+            </div>
+            </div>
+            </div>
+    </section>
+    <section class="feedback">
+    	<div class="container">
+    		<h2 class="lang" key="feedh2">feedback</h2>
+    		<div class="row">
+    			<div class="col-lg-6 col-md-6 col-sm-6 st">
+    				<div class="col-lg-12">
+    					<img src="img/feedback1.png" alt="">
+    					<h4 class="lang" key="feedname">Begimai Baktybek kyzy</h4>
+    				</div>
+    				<div class="col-lg-12 col-md-12 col-sm-12 lang" key="feedp"><p>Очень вкусное варенье! Мне нравиться, а главное что из экологически чистых продуктов! А мыло просто супер, пользуюсь ! Поддержим отечественное, поддержим этот проект! Спасибо вам за вашу работу</p></div>
+    			</div>
+
+    			<div class="col-lg-6 col-md-6 col-sm-6">
+    				<div class="col-lg-12">
+    					<img src="img/feedback2.png" alt="">
+    					<h4 class="lang" key="feedname2">Seema Tiwari</h4>
+    				</div>
+    				<div class="col-lg-12 col-md-12 col-sm-12 lang" key="feedp2"><p>This is a very good project I give a 5 stars</p></div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="howto">
+    	<div class="howto-inner">
+    		<h2 class="lang" key="howh1">how to order</h2>
+    		<p><strong>______________</strong></p>
+
+				<div class="main-button">
+				<a  class="lang" key="howbtn" href="howtoorder.html">more</a></div></div>
+			</div>	
+
+    	</div>
+    </section>
+    <section id="contacts" class="contacts">
+	   <div class="container">
+	 <div class="row">
+		<h2 class="lang" key="conth1">contacts</h2>
+	  </div>
+	  <div class="row">
+		
+	  <div class="col-lg-6 col-md-6 col-sm-6">
+		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.105529155832!2d78.39452291514453!3d42.48930907917855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865bed699f9d25%3A0x1bfa4ed5d833dde3!2zNjEg0KLRi9C90YvRgdGC0LDQvdC-0LLQsCAoMS3QnNCw0Y8pLCDQmtCw0YDQsNC60L7Quw!5e0!3m2!1sru!2skg!4v1518024307946" width="350" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	  </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-12"><p class="lang" key="cont1">E-mail: ovop.kyrgyzstan@gmail.com</p> </div>
+          <div class="col-lg-12"><p class="lang" key="cont2">Phone:  +996 3922 51601</p></div>
+          <div class="col-lg-12"><p class="lang" key="cont3">You can buy our products in Kyrgyzstan:</p></div>
+          <div class="col-lg-12"><p class="lang" key="cont4">Bishkek, Chuy av. 114, shop “Issyk-Kul Brand”, phone: 661 131</p></div>
+          <div class="col-lg-12"><p class="lang" key="cont5">Bishkek, Toktogul st. 140, OVOP centre, phone: +996 504 503, +996 772 330 136</p></div>
+          <div class="col-lg-12"><p class="lang" key="cont6">Karakol, Toktogul st., “Issyk-Kul Brand”, phone: +996 3922 54357</p></div>
+      </div>
+	  </div>
+	    </div>
+    </section>
+    <footer class="footer">
+	   <div class="container">
+		<div class="col-lg-6 col-md-6 col-sm-2 logo"><span>all rights reserved.</span></div>
+		<div class="col-lg-2 col-lg-offset-4   col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-7 soc"><a href="https://www.instagram.com/ovop.kg/?hl=en">
+            <img src="img/001-social-media.png" alt=""></a><a href="https://www.facebook.com/One-Village-One-Product-Issyk-kul-236219876529319/ ">
+            <img src="img/002-social.png" alt=""></a></div>
+	   </div>
+    </footer>
+
+	
+</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script>$(document).ready(function(){
+            $('.popup-btn').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeIn();
+            });
+            $('.popup-close').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeOut();
+            });
+            $('.acb').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeOut();
+            });
+            $('.featured-slider').slick({
+                 infinite: true,
+                 slidesToShow: 4,
+                 slidesToScroll: 1,
+                 responsive: [
+            {
+                 breakpoint: 991,
+                 settings: {
+                 slidesToShow: 2,
+                 prevArrow: '<button class="prev arrow"></button>',
+                 nextArrow: '<button class="next arrow"></button>',
+                 slidesToScroll: 2
+            }
+            },
+            {
+                 breakpoint: 767,
+                 settings: {
+                 slidesToShow: 1,
+                 prevArrow: '<button class="prev arrow"></button>',
+                 nextArrow: '<button class="next arrow"></button>',
+                 slidesToScroll: 1
+            }
+            }
+            ]
+            });
+            });
+    </script>
+</html>

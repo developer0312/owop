@@ -1,0 +1,50 @@
+p {
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 18px;
+  color: #7D9DD4;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.header {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-bottom: 3rem;
+}
+.header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #7D9DD4;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.localization {
+  margin-top: 2rem;
+}
+.localization .en {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem ;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline;
+  text-decoration: none;
+}
+.localization .en a {
+  color: black;
+}
+.localization .en a:hover {
+  text-decoration: none;
+}
+.localization .ru {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline;
+  text-decoration: none;
+}
+.localization .ru a {
+  color: black;
+}
+.localization .ru a:hover {
+  text-decoration: none;
+}
