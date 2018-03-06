@@ -48,3 +48,8 @@ p {
 .localization .ru a:hover {
   text-decoration: none;
 }
+@media (max-width: 991px) {
+  .localization {
+    text-align: center;
+  }
+}
