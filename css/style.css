@@ -136,14 +136,14 @@ section {
   text-transform: uppercase;
   color: #7D9DD4;
 }
-@media (max-width: 765px); {
+@media (max-width: 765px) {
   .localization {
     text-align: center;
     margin-top: 3rem;
   }
+  google.maps.event.trigger( map, 'resize' );
   .contacts .maps {
-    text-align: none;
-    max-width: 10px;
+    max-width: 150px;
   }
   .footer img {
     margin-top: 2rem;
