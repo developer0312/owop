@@ -143,6 +143,7 @@ section {
   }
   .contacts .maps {
     max-width: 50px;
+    min-height: 10px;
   }
   .footer img {
     margin-top: 2rem;
