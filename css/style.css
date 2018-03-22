@@ -136,14 +136,14 @@ section {
   text-transform: uppercase;
   color: #7D9DD4;
 }
-@media (max-width: 765px) {
+@media (max-width: 765px); {
   .localization {
     text-align: center;
     margin-top: 3rem;
   }
   .contacts .maps {
-    max-width: 50px;
-    min-height: 10px;
+    text-align: none;
+    max-width: 10px;
   }
   .footer img {
     margin-top: 2rem;
@@ -170,7 +170,7 @@ section {
     margin-bottom: 4rem;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 991px); {
   .products .col-lg-4 {
     margin-bottom: 4rem;
   }
